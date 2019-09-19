@@ -21,7 +21,7 @@ module "networking" {
   subnet_address_prefixes = var.subnet_address_prefixes
 }
 module "webserver" {
-  source  = "cmm-training.digitalinnovation.dev/YOUR_ORG_NAME/webserver/azurerm"
+  source  = "cmm-training.digitalinnovation.dev/mbarber-org/webserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -33,7 +33,7 @@ module "webserver" {
 }
 
 module "appserver" {
-  source  = "cmm-training.digitalinnovation.dev/YOUR_ORG_NAME/appserver/azurerm"
+  source  = "cmm-training.digitalinnovation.dev/mbarber-org/appserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
@@ -45,7 +45,7 @@ module "appserver" {
 }
 
 module "dataserver" {
-  source  = "cmm-training.digitalinnovation.dev/YOUR_ORG_NAME/dataserver/azurerm"
+  source  = "cmm-training.digitalinnovation.dev/mbarber-org/dataserver/azurerm"
   version = "0.12.0"
 
   name      = var.name
